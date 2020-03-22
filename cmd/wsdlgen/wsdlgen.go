@@ -1,11 +1,11 @@
-package main // import "aqwari.net/xml/cmd/wsdlgen"
+package main // import "github.com/voltusdev/go-xml/cmd/wsdlgen"
 
 import (
 	"log"
 	"os"
 
-	"aqwari.net/xml/wsdlgen"
-	"aqwari.net/xml/xsdgen"
+	"github.com/voltusdev/go-xml/wsdlgen"
+	"github.com/voltusdev/go-xml/xsdgen"
 )
 
 func main() {
