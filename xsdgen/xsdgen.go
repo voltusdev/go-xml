@@ -322,7 +322,7 @@ func (cfg *Config) expandComplexTypes(types []xsd.Type) []xsd.Type {
 		for _, attr := range c.Attributes {
 			shadowedAttributes[attr.Name] = struct{}{}
 		}
-		
+
 		var baseElements []xsd.Element
 		for _, el := range b.Elements {
 			if _, ok := shadowedElements[el.Name]; !ok {
@@ -334,7 +334,7 @@ func (cfg *Config) expandComplexTypes(types []xsd.Type) []xsd.Type {
 		}
 		// prepend base elements, to preserve sequence order
 		c.Elements = append(baseElements, c.Elements...)
-		
+
 		for _, attr := range b.Attributes {
 			if _, ok := shadowedAttributes[attr.Name]; !ok {
 				c.Attributes = append(c.Attributes, attr)
@@ -691,10 +691,10 @@ func (cfg *Config) genComplexType(t *xsd.ComplexType) ([]spec, error) {
 		if err != nil {
 			return nil, fmt.Errorf("%s element %s: %v", t.Name.Local, el.Name.Local, err)
 		}
-		
+
 		// Use pointer for optional structs
 		if !el.Plural && fmt.Sprintf("%s", base) != "string" && (el.Nillable || el.Optional) {
-			base = ast.NewIdent(fmt.Sprintf("*%s", base))
+			base = &ast.StarExpr{X: base}
 		}
 
 		name := namegen.element(el.Name)
