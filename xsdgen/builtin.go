@@ -3,7 +3,7 @@ package xsdgen
 import (
 	"go/ast"
 
-	"github.com/voltusdev/go-xml/xsd"
+	"aqwari.net/xml/xsd"
 )
 
 func builtinExpr(b xsd.Builtin) ast.Expr {

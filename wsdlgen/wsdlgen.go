@@ -7,7 +7,7 @@
 //
 // Code generation for the wsdlgen package can be configured by using
 // the provided Option functions.
-package wsdlgen // import "github.com/voltusdev/go-xml/wsdlgen"
+package wsdlgen // import "aqwari.net/xml/wsdlgen"
 
 import (
 	"encoding/xml"
@@ -17,10 +17,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/voltusdev/go-xml/internal/gen"
-	"github.com/voltusdev/go-xml/wsdl"
-	"github.com/voltusdev/go-xml/xsd"
-	"github.com/voltusdev/go-xml/xsdgen"
+	"aqwari.net/xml/internal/gen"
+	"aqwari.net/xml/wsdl"
+	"aqwari.net/xml/xsd"
+	"aqwari.net/xml/xsdgen"
 )
 
 // Types conforming to the Logger interface can receive information about

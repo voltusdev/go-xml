@@ -11,7 +11,7 @@
 //
 // The xsd package respects XML name spaces in schema documents, and can
 // parse schema documents that import or include other schema documents.
-package xsd // import "github.com/voltusdev/go-xml/xsd"
+package xsd // import "aqwari.net/xml/xsd"
 
 import (
 	"bytes"
@@ -20,7 +20,7 @@ import (
 	"io"
 	"regexp"
 
-	"github.com/voltusdev/go-xml/xmltree"
+	"aqwari.net/xml/xmltree"
 )
 
 const (

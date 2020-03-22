@@ -36,6 +36,9 @@ func TestSoap(t *testing.T) {
 func TestSimpleStruct(t *testing.T) {
 	testGen(t, "http://example.org/ns", "testdata/simple-struct.xsd")
 }
+func TestOpenADRSchema(t *testing.T) {
+	testGen(t, "http://openadr.org/oadr-2.0b/2012/07", "testdata/oadr_ei.xsd", "testdata/oadr.xsd")
+}
 func testGen(t *testing.T, ns string, files ...string) string {
 	file, err := ioutil.TempFile("", "xsdgen")
 	if err != nil {

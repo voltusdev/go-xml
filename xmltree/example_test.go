@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/voltusdev/go-xml/xmltree"
+	"aqwari.net/xml/xmltree"
 )
 
 func ExampleElement_Search() {

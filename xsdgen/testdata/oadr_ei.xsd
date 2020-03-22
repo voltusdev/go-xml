@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ei="http://docs.oasis-open.org/ns/energyinterop/201110" targetNamespace="http://docs.oasis-open.org/ns/energyinterop/201110" elementFormDefault="qualified" attributeFormDefault="qualified">
+  <!--  ******* venID ******** -->
+	<xs:element name="venID" type="xs:string"/>
+  <!-- schemaVersion -->
+	<xs:attribute name="schemaVersion" type="ei:schemaVersionType"/>
+	<xs:simpleType name="schemaVersionType">
+		<xs:union memberTypes="ei:schemaVersionEnumeratedType"/>
+	</xs:simpleType>
+	<xs:simpleType name="schemaVersionEnumeratedType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="2.0a"/>
+			<xs:enumeration value="2.0b"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

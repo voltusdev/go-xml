@@ -1,5 +1,5 @@
 // Package dependency builds and flattens dependency graphs.
-package dependency // import "github.com/voltusdev/go-xml/internal/dependency"
+package dependency // import "aqwari.net/xml/internal/dependency"
 
 import (
 	"sort"

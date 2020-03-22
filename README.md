@@ -5,7 +5,7 @@
 Requires go 1.9 or greater for golang.org/x/html dependency.
 
 ```
-go get github.com/voltusdev/go-xml/...
+go get aqwari.net/xml/...
 ```
 
 This repository contains a collection of Go packages for working

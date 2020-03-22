@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/voltusdev/go-xml/xmltree"
+	"aqwari.net/xml/xmltree"
 )
 
 // When working with an xml tree structure, we naturally have some

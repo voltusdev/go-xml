@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ei="http://docs.oasis-open.org/ns/energyinterop/201110" xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07" targetNamespace="http://openadr.org/oadr-2.0b/2012/07" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:import namespace="http://docs.oasis-open.org/ns/energyinterop/201110"/>
+	<xs:element name="oadrPoll" type="oadr:oadrPollType">
+		<xs:annotation>
+			<xs:documentation>Query pull VTN for payloads with new or modified information</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="oadrPollType">
+		<xs:sequence>
+			<xs:element ref="ei:venID"/>
+		</xs:sequence>
+		<xs:attribute ref="ei:schemaVersion" use="optional"/>
+	</xs:complexType>
+</xs:schema>

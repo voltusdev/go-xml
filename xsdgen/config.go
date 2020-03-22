@@ -9,8 +9,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/voltusdev/go-xml/internal/gen"
-	"github.com/voltusdev/go-xml/xsd"
+	"aqwari.net/xml/internal/gen"
+	"aqwari.net/xml/xsd"
 )
 
 // A Config holds user-defined overrides and filters that are used when
